@@ -5,11 +5,15 @@
 from logic import make_empty_board, get_winner, other_player
 
 def print_board(board):
+#Print the Tic-Tac-Toe board
+    
     for i, row in enumerate(board):
         print(f"{i} | {' | '.join(cell if cell is not None else ' ' for cell in row)} |")
     print("   0   1   2")
 
 def main():
+#Making empty Tic-Tac-Toe board
+    
     board = make_empty_board()
     player = 'X'
 
